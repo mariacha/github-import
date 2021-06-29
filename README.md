@@ -17,4 +17,5 @@ something looking like this:
 4. Visit the make-import.php script in your browser. This will update the contents of `exported.csv`
 5. If you have images associated with your Notion cards, you can commit them to the repo, or to the repo's wiki. The script currently assumes you've done the latter, in a folder called "notion-imgs" . Example: `https://github.com/mariacha/github-import/wiki/notion-imgs/`
 6. Create any milestones referenced in the tickets. Unlike labels, Github won't auto-create milestones based on titles.
-7. Use `githubCsvTools exported.csv --token=[Use yours] --organization=yourname --repository=therepo` to create all the issues in exported.csv. It's recommended you test this on a test repo first (one you can delete when you're done).
+7. Install https://github.com/gavinr/github-csv-tools
+8. Use `githubCsvTools exported.csv --token=[Use yours] --organization=yourname --repository=therepo` to create all the issues in exported.csv. It's recommended you test this on a test repo first (one you can delete when you're done).
