@@ -57,6 +57,7 @@
 To test this piece of functionality, follow these steps:
 1. As a [user role], go to [url](url), set [form item] to [value], click submit.
 2. You should see the message [what user should see].';
+
   $output = '';
   $line_numb = 0;
   while (($line = fgetcsv($file)) !== FALSE) {
@@ -90,7 +91,7 @@ To test this piece of functionality, follow these steps:
           $file_contents = fopen($file_string, "r");
           $additional_body = fread($file_contents, filesize($file_string));
           // Link to the correct file urls
-          $additional_body = str_replace('.png](', '.png](https://github.com/thinkshout/accessjewishcleveland/wiki/notion-imgs/', $additional_body);
+          $additional_body = str_replace('.png](', '.png](https://github.com/mariacha/github-import/wiki/notion-imgs/', $additional_body);
           $additional_body = str_replace('"', '“', $additional_body);
           fclose($file_contents);
         }
